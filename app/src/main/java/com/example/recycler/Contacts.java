@@ -1,22 +1,26 @@
 package com.example.recycler;
 
 public class Contacts {
-    private String Name;
+    private String name;
     private String phonenumber;
-    private int Imageid;
+    private String address;
+    private String email;
+    private int imageid;
 
-    public Contacts(String name, String phonenumber, int imageid) {
-        Name = name;
+    public Contacts(String name, String phonenumber, String address, String email, int imageid) {
+        this.name = name;
         this.phonenumber = phonenumber;
-        Imageid = imageid;
+        this.address = address;
+        this.email = email;
+        this.imageid = imageid;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getPhonenumber() {
@@ -27,11 +31,27 @@ public class Contacts {
         this.phonenumber = phonenumber;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public int getImageid() {
-        return Imageid;
+        return imageid;
     }
 
     public void setImageid(int imageid) {
-        Imageid = imageid;
+        this.imageid = imageid;
     }
 }

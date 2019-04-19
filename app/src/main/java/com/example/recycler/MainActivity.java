@@ -21,18 +21,18 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.RecyclerView);
 
         List<Contacts> contactsList = new ArrayList<>();
-        contactsList.add( new Contacts("Saugat Malla","9808524522",R.drawable.saugat));
-        contactsList.add( new Contacts("Rajesh hamal","9805513422",R.drawable.rajesh));
-        contactsList.add( new Contacts(" Bhuwan KC","98085256522",R.drawable.bhuwan));
-        contactsList.add( new Contacts(" Bipin Karki","98085256522",R.drawable.bipin));
-        contactsList.add( new Contacts(" Anmol KC","98085256522",R.drawable.anmol));
-        contactsList.add( new Contacts(" Pradeep Khadka","98085256522",R.drawable.pradeep));
-        contactsList.add( new Contacts(" Salman Khana","98085256522",R.drawable.salman));
-        contactsList.add( new Contacts(" Allu Arjun","98085256522",R.drawable.allu));
-        contactsList.add( new Contacts(" Mahesh Babu","98085256522",R.drawable.mahes));
+        contactsList.add( new Contacts("Saugat Malla","9808524522","b haktayur","kjhasd@gmail.com",R.drawable.saugat));
+        contactsList.add( new Contacts("Rajesh hamal","9805513422","b haktayur","kjhasd@gmail.com",R.drawable.rajesh));
+        contactsList.add( new Contacts(" Bhuwan KC","98085256522","b haktayur","kjhasd@gmail.com",R.drawable.bhuwan));
+        contactsList.add( new Contacts(" Bipin Karki","98085256522","b haktayur","kjhasd@gmail.com",R.drawable.bipin));
+        contactsList.add( new Contacts(" Anmol KC","98085256522","b haktayur","kjhasd@gmail.com",R.drawable.anmol));
+        contactsList.add( new Contacts(" Pradeep Khadka","98085256522","b haktayur","kjhasd@gmail.com",R.drawable.pradeep));
+        contactsList.add( new Contacts(" Salman Khana","98085256522","b haktayur","kjhasd@gmail.com",R.drawable.salman));
+        contactsList.add( new Contacts(" Allu Arjun","98085256522","b haktayur","kjhasd@gmail.com",R.drawable.allu));
+        contactsList.add( new Contacts(" Mahesh Babu","98085256522","b haktayur","kjhasd@gmail.com",R.drawable.mahes));
 
         ContactsAdapter contactsAdapter = new ContactsAdapter(this,contactsList);
         recyclerView.setAdapter(contactsAdapter);
-        recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 }
